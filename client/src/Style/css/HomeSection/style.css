@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.header{
+    /* background-color: #d67575; */
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+}
+.header ul{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    position: relative;
+
+}
+
+
+.header ul li {
+    font-size: 3rem;
+    border-radius: 20rem;
+    padding: .2rem 2rem;
+    transition: 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header ul li::after {
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    background-color: #df6969;
+    bottom: 0;
+    display: flex;
+    visibility: hidden;
+    width: 10%;
+    transition: all 0s;
+    height: 0.5rem;
+    
+}
+
+.header ul li:hover::after{
+    visibility: visible;
+}
+
+.header ul li a {
+    color: black;
+}
+
+
+.headerimg{
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+    border-radius: 20rem;
+}
+
+/* HERO SECTION  */
+
+
+.herosection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heroimg img{
+    filter: invert(10%);
+}
+
+.headertext{
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.headertext button{
+    border: 0;
+    outline: 0;
+    padding: 2rem 7rem;
+    border-radius: 20rem;
+    background-color: #df6969;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.headertext button:hover{
+    opacity: 0.5;
+    color: white;
+}
+
+.headertext h1{
+font-size: 8rem;
+}
+
+.headertext p {
+    font-size: 2.2rem;
+    max-width: 80rem;
+    line-height: 3.5rem;
+    margin-top: 1rem;
+
+  
+}
+
+/* Review SECTIOn */
+
+.reviewSection{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15rem;
+    min-height: 30rem;
+}
+
+.review{
+    /* border: 1rem solid #df6969;  */
+    border-radius: 3rem;
+    background: #df6969;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.review:hover{
+    background: #df6969;
+    background: rgba(203, 195, 196, 0.201);
+    color: black;
+    cursor: pointer;
+}
+
+.review h3{
+font-size: 4.5rem;
+}
+
+
+
+.review p {
+    max-width: 40rem;
+    font-size: 2rem;
+}
+
+
+
+
+/* VIDEOS CONTAINER */
+
+.videosContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    background-color: #df6969;;
+    text-align: center;
+    transition: all 0.1s;
+}
+
+.videosContainer:hover{
+    background-color: #df6969dd;
+
+}
+
+
+.videotext h2{
+    font-size: 6rem;
+}
+
+.videotext p{
+    font-size: 2rem;
+    max-width: 50rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+
+
+
+@media (max-width:1024px){
+    html{
+        font-size: 40%;
+    }
+    .herosection{
+        flex-direction: column-reverse;
+    }
+    .myvideo{
+       width: 50rem;
+       height: 25rem;
+    }
+}
+
+@media (max-width:630px){
+    html{
+        font-size: 30%;
+    }
+
+    .reviewSection{
+        flex-direction: column;
+        min-height: 50rem;
+    }
+
+    .review{
+        margin-top: 5rem;
+    }
+    .review p {
+
+        width: 50%;
+         margin: auto;
+    }
+
+    .heroimg img{
+        width: 45rem;
+    }
+    .footercontainer{
+        margin-top: 50rem;
+    }
+}
+
+@media (max-width:250px) {
+    .myvideo{
+        width: 30rem;
+        height: 15rem;
+     }
+}
